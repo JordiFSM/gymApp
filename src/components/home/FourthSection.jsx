@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFire, faStar  } from '@fortawesome/free-solid-svg-icons'; 
 import styles from "./home.module.css";
 
 export const FourthSection = () => {
@@ -42,16 +44,9 @@ export const FourthSection = () => {
           data-aos="fade-right"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine">
-          <i className="fa-brands fa-google"></i>
+          
           <div>
-            <p>Marcar un objetivo</p>
-            <div>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-            </div>
+            <p>Marcar un objetivo  <FontAwesomeIcon  icon={faFire} style={{color: 'red'}}/> </p>
           </div>
         </div>
       </div>
