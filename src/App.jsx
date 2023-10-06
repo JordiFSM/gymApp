@@ -1,6 +1,7 @@
 import { Suspense } from "react"
 import { Header } from "./components/header/Header"
-import { Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
+import { Home } from "./components/home/Home"
 
 
 export const App = () => {
@@ -9,7 +10,7 @@ export const App = () => {
     <div>
      <Header />
         <Routes>
-          
+          <Route path="/Fitness-Website" element={<Home />} />
         </Routes>
     </div>
   )
