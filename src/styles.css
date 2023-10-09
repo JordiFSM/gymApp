@@ -86,34 +86,6 @@ p {
 }
 
 /* Global Styles For All  Button*/
-button {
-  position: relative;
-  padding: 10px 20px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-weight: 600;
-  z-index: 1;
-}
-
-button::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 100%;
-  transition: var(--main-transition);
-  -webkit-transition: var(--main-transition);
-  -moz-transition: var(--main-transition);
-  -ms-transition: var(--main-transition);
-  -o-transition: var(--main-transition);
-  z-index: -1;
-}
-
-button:hover::before {
-  width: 100%;
-}
 
 /* Global P  */
 .paragraph {

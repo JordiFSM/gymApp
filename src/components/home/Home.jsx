@@ -3,6 +3,8 @@ import { FiveSection } from "./FiveSection";
 import { FourthSection } from "./FourthSection";
 import { SecondSection } from "./SecondSection";
 import { ThirdSection } from "./ThirdSection";
+import { Trainers } from "../trainers/Trainers";
+import { SixSection } from "./SixthSection";
 
 export const Home = () => {
   return (
@@ -12,6 +14,8 @@ export const Home = () => {
       <ThirdSection />
       <FourthSection />
       <FiveSection/>
+      <Trainers/>
+      <SixSection/>
 
     </div>
   );

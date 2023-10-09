@@ -44,10 +44,8 @@ export const FourthSection = () => {
           data-aos="fade-right"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine">
-          
-          <div>
+            <h4>04</h4>
             <p>Marcar un objetivo  <FontAwesomeIcon  icon={faFire} style={{color: 'red'}}/> </p>
-          </div>
         </div>
       </div>
     </>

@@ -22,7 +22,18 @@ export const FiveSection = () => {
       className={`${styles.five} sections-padding`}
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom">
+      
+      
       <div className={`${styles.five_content} container `}>
+      <div
+          className={styles.swipe_content_title}
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+          <h4></h4>
+          <p><b>Comentarios</b></p>
+
+        </div>
+        <br/>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={30}
