@@ -7,51 +7,6 @@ import { } from '@fortawesome/free-brands-svg-icons'
 
 export const SixSection = () => {
 
-
-  const buttonStyles = {
-    position: 'relative',
-    fontSize: '18px',
-    letterSpacing: '2px',
-    textTransform: 'uppercase',
-    display: 'inline-block',
-    textAlign: 'center',
-    fontWeight: 'bold',
-    padding: '0.7em 1em',
-    border: '3px solid #fdd700',
-    boxShadow: '0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1)',
-    textDecoration: 'none',
-    transition: '0.3s ease all',
-    color: "#fdd700",
-    zIndex: 1,
-  };
-  
-  const buttonBeforeStyles1 = {
-    ...buttonStyles,
-    ':before': {
-      content: '""',
-      transition: '0.5s all ease',
-      position: 'absolute',
-      top: 0,
-      left: '50%',
-      right: '50%',
-      bottom: 0,
-      opacity: 0,
-      backgroundColor: '#fdd700',
-      zIndex: -1,
-    },
-    ':hover, :focus': {
-    },
-    ':hover:before, :focus:before': {
-      transition: '0.5s all ease',
-      left: 0,
-      right: 0,
-      opacity: 1,
-    },
-    ':active': {
-      transform: 'scale(0.9)',
-    },
-  };
-
   return (
     <div className={`${styles.six} container`}>
       <div>
@@ -65,7 +20,11 @@ export const SixSection = () => {
             &nbsp;
             Basico
           </h3>
-          <div style={{backgroundColor:"rgb(26, 105, 252)"}}>
+          <div style={{
+            background: 'linear-gradient(to right, rgb(26, 105, 252), rgb(255, 70, 70))',
+            padding: '20px', // Agrega el espaciado según sea necesario
+            color: 'white' // Cambia el color del texto si es necesario
+          }}>
             <h4>₡ 1500 / diarios</h4>
           </div>
           <ul>
@@ -78,7 +37,25 @@ export const SixSection = () => {
             <br></br>
             <br></br>
             <br></br>
-            <button  style={{color: "rgb(26, 105, 252)", border:"3px solid rgb(26, 105, 252)"}} > Suscribir </button>
+            <button style={{
+              backgroundImage: 'linear-gradient(to right, rgb(26, 105, 252), rgb(255, 70, 70))',
+              color: 'transparent',
+              WebkitBackgroundClip: 'text',
+              backgroundClip: 'text',
+              border: '2px solid',
+              borderImage: 'linear-gradient(to right, rgb(26, 105, 252), rgb(255, 70, 70)) 1',
+              transition: '0.3s ease all', 
+              position: 'relative',
+            }}
+              onMouseEnter={(e) => { e.currentTarget.style.color = 'white'
+               e.currentTarget.style.backgroundClip = "initial"
+               e.currentTarget.style.WebkitBackgroundClip = "initial" }}
+              onMouseLeave={(e) => { e.currentTarget.style.color = 'transparent'
+              e.currentTarget.style.backgroundClip = "text"
+              e.currentTarget.style.WebkitBackgroundClip = "text" } }
+            >
+              Suscribir
+            </button>
           </ul>
         </div>
         <div className={styles.plan}>
@@ -87,7 +64,11 @@ export const SixSection = () => {
           &nbsp;
             Standard
           </h3>
-          <div style={{backgroundColor:"rgb(241, 35, 180)"}}>
+          <div style={{
+            background: 'linear-gradient(to right, rgb(241, 35, 180), rgb(255, 215, 0))',
+            padding: '20px', // Agrega el espaciado según sea necesario
+            color: 'white' // Cambia el color del texto si es necesario
+          }}>
             <h4>₡ 12000 / quincenal</h4>
           </div>
           <ul>
@@ -99,8 +80,25 @@ export const SixSection = () => {
             <li>Seguimiento de cargas</li>
             <br></br>
             <br></br>
-            
-            <button > Suscribir </button>
+            <button style={{
+              backgroundImage: 'linear-gradient(to right, rgb(241, 35, 180),  rgb(255, 215, 0))',
+              color: 'transparent',
+              WebkitBackgroundClip: 'text',
+              backgroundClip: 'text',
+              border: '2px solid',
+              borderImage: 'linear-gradient(to right, rgb(241, 35, 180),  rgb(255, 215, 0)) 1',
+              transition: '0.3s ease all', 
+              position: 'relative',
+            }}
+              onMouseEnter={(e) => { e.currentTarget.style.color = 'white'
+               e.currentTarget.style.backgroundClip = "initial"
+               e.currentTarget.style.WebkitBackgroundClip = "initial" }}
+              onMouseLeave={(e) => { e.currentTarget.style.color = 'transparent'
+              e.currentTarget.style.backgroundClip = "text"
+              e.currentTarget.style.WebkitBackgroundClip = "text" } }
+            >
+              Suscribir
+            </button>
           </ul>
         </div>
         <div className={styles.plan} >
@@ -109,7 +107,11 @@ export const SixSection = () => {
           &nbsp; 
           Premium
           </h3>
-          <div style={{backgroundColor:"rgb(253, 215, 0)"}}>
+          <div style={{
+            background: 'linear-gradient(to right, rgb(253, 215, 0), #40dada)',
+            padding: '20px', // Agrega el espaciado según sea necesario
+            color: 'white' // Cambia el color del texto si es necesario
+          }}>
             <h4>₡ 20000 / mensual</h4>
           </div>
           <ul>
@@ -120,7 +122,25 @@ export const SixSection = () => {
             <li>Mentoría técnica</li>
             <li>Seguimiento de cargas</li>
             <li>Seguimiento de peso mensual</li>
-            <button style={{ color: "#fdd700", border:"3px solid #fdd700" }}> Suscribir </button>
+            <button style={{
+              backgroundImage: 'linear-gradient(to right, rgb(253, 215, 0),  #40dada)',
+              color: 'transparent',
+              WebkitBackgroundClip: 'text',
+              backgroundClip: 'text',
+              border: '2px solid',
+              borderImage: 'linear-gradient(to right,  rgb(253, 215, 0),  #40dada) 1',
+              transition: '0.3s ease all', 
+              position: 'relative',
+            }}
+              onMouseEnter={(e) => { e.currentTarget.style.color = 'white'
+               e.currentTarget.style.backgroundClip = "initial"
+               e.currentTarget.style.WebkitBackgroundClip = "initial" }}
+              onMouseLeave={(e) => { e.currentTarget.style.color = 'transparent'
+              e.currentTarget.style.backgroundClip = "text"
+              e.currentTarget.style.WebkitBackgroundClip = "text" } }
+            >
+              Suscribir
+            </button>
           </ul>
         </div>
       </div>
